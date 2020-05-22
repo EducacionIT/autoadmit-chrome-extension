@@ -1,0 +1,29 @@
+{
+    "name": "Meet auto admit - EducationIT",
+    "version": "1.0",
+    "description": "Automatically admit any external user to google meet",
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+    "icons": {
+      "16": "images/auto_meet-16.png",
+      "32": "images/auto_meet-32.png",
+      "48": "images/auto_meet-48.png",
+      "128": "images/auto_meet-128.png"
+    },
+    "browser_action": {
+      "default_icon": {
+         "16": "images/auto_meet-16.png",
+         "32": "images/auto_meet-32.png",
+         "48": "images/auto_meet-48.png",
+      	 "128": "images/auto_meet-128.png"
+      }},
+    "content_scripts": [ {
+      "js": [ "toggle.js" ],
+      "matches": [ "*://meet.google.com/*" ]
+      }
+    ],
+    "permissions": [ "storage" ],
+    "manifest_version": 2
+}
