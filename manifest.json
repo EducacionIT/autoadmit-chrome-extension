@@ -1,6 +1,6 @@
 {
     "name": "Meet auto admit - EducationIT",
-    "version": "1.0",
+    "version": "1.0.1",
     "description": "Automatically admit any external user to google meet",
     "background": {
       "scripts": ["background.js"],
