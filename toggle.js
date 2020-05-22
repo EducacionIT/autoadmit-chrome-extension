@@ -1,4 +1,4 @@
-var admitButtonText = ['permitir', 'admit', 'allow'];
+var admitButtonText = ['permitir', 'admitir', 'admit', 'allow'];
 var hadError = false;
 var isWorking = false;
 
