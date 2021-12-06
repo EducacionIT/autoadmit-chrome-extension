@@ -6,9 +6,7 @@ var isWorking = false;
 function clickAdmit() {
   chrome.storage.sync.get('isWorking', function(result) {
     isWorking =  result.isWorking
-    // console.log('dice:');console.log(result.isWorking);console.log(isWorking)
   });
-  //console.log('aceptando');
   if (isWorking) {
     try {
       var possibleAdmitButtons = document.querySelectorAll('div[role="dialog"] div[role="button"]');
